@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pedido de Vendas</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/form-cliente.css">
+    <link rel="stylesheet" href="css/navegacao.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="lista-clientes.html">CLIENTES</a>
+            <a href="#">CARROS</a>
+            <a href="#">PEDIDOS</a>
+        </nav>
+    </header>
+    <main>
+        <h1>CADASTRO DE PEDIDO DE VENDAS</h1>
+        <div class="container-formulario">
+            <form action="process_registration_order.php" method="POST">
+                <label for="input-cliente">
+                    Cliente
+                    <br>
+                    <input type="text" id="input-cliente" name="input-cliente" placeholder="Nome do cliente" required>
+                </label>
+                <label for="input-carro">
+                    Carro
+                    <br>
+                    <input type="text" id="input-carro" name="input-carro" placeholder="Modelo do carro" required>
+                </label>
+                <label for="input-data">
+                    Data do Pedido
+                    <br>
+                    <input type="date" id="input-data" name="input-data" required>
+                </label>
+                <label for="input-quantidade">
+                    Quantidade
+                    <br>
+                    <input type="number" id="input-quantidade" name="input-quantidade" min="1" required>
+                </label>
+
+                <input type="button" value="CADASTRAR">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

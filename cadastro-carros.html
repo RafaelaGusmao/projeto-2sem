@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Carro</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/form-cliente.css">
+    <link rel="stylesheet" href="css/navegacao.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="lista-clientes.html">CLIENTES</a>
+            <a href="#">CARROS</a>
+            <a href="#">PEDIDOS</a>
+        </nav>
+    </header>
+    <h1>CADASTRO DE CARRO</h1>
+    <div class="container-formulario">
+        <form action="process_registration_car.php" method="POST">
+            <label for="modelo">
+                Modelo
+                <br>
+                <input type="text" id="input-modelo-carro" name="input-modelo-carro" placeholder="Modelo do carro" required>
+            </label>
+            <label for="marca">
+                Marca
+                <br>
+                <input type="text" id="input-marca-carro" name="input-marca-carro" placeholder="Marca do carro" required>
+            </label>
+            <label for="ano">
+                Ano
+                <br>
+                <input type="number" id="input-ano-carro" name="input-ano-carro" placeholder="Ano do modelo" min="1886" max="2024" required>
+            </label>
+            <label for="placa">
+                Placa
+                <br>
+                <input type="text" id="input-placa-carro" name="input-placa-carro" placeholder="Placa do carro" required pattern="[A-Z]{3}[0-9]{4}">
+            </label>
+
+            <input type="button" value="CADASTRAR">
+        </form>
+    </div>
+</body>
+
+</html>

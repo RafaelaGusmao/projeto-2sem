@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pedidos de Vendas</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/navegacao.css">
+    <link rel="stylesheet" href="css/listagem.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="lista-clientes.html">CLIENTES</a>
+            <a href="lista-carros.html">CARROS</a>
+            <a href="lista-pedidos.html">PEDIDOS</a>
+        </nav>
+    </header>
+    <main class="painel">
+        <div class="esquerda">
+            <div>
+                <a href="/cadastro-pedido.html">NOVO PEDIDO</a>
+            </div>
+        </div>
+        <div class="meio">
+            <h1>PEDIDOS DE VENDAS</h1>
+        </div>
+        <div class="direita"></div>
+    </main>
+    <div class="container-tabela">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">ID PEDIDO</th>
+                    <th scope="col">CLIENTE</th>
+                    <th scope="col">CARRO</th>
+                    <th scope="col">DATA DO PEDIDO</th>
+                    <th scope="col">STATUS</th>
+                    <th scope="col">AÇÕES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>João Silva</td>
+                    <td>Toyota Hilux GR-Sport</td>
+                    <td>2024-10-01</td>
+                    <td>Confirmado</td>
+                    <td>
+                        <img src="assets/icons/pencil-square.svg" alt="editar" aria-label="Editar">
+                        <img src="assets/icons/trash-fill.svg" alt="excluir" aria-label="Excluir">
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Maria Oliveira</td>
+                    <td>Mercedes-Benz CLA 200 Progressive</td>
+                    <td>2024-10-02</td>
+                    <td>Pendente</td>
+                    <td>
+                        <img src="assets/icons/pencil-square.svg" alt="editar" aria-label="Editar">
+                        <img src="assets/icons/trash-fill.svg" alt="excluir" aria-label="Excluir">
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Carlos Pereira</td>
+                    <td>BMW X6 M Competition</td>
+                    <td>2024-10-03</td>
+                    <td>Cancelado</td>
+                    <td>
+                        <img src="assets/icons/pencil-square.svg" alt="editar" aria-label="Editar">
+                        <img src="assets/icons/trash-fill.svg" alt="excluir" aria-label="Excluir">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
